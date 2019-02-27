@@ -25,15 +25,17 @@ const MainNavigator = createBottomTabNavigator({
 
         map: {
             screen: createStackNavigator({
-                map: { screen: MapScreen },
+                map: { screen: MapScreen  },
                 complaint: { screen: ComplaintScreen },
                 auth: { screen: AuthScreen }
-            })
-            ,  navigationOptions:{
+            } )
+            ,
+            navigationOptions:{
                 title:'Mapa',
                 tabBarIcon : ({tintColor}) => {
                     return <Icon name='my-location' size={30} color={tintColor}/>
-                }
+                },
+                header: null
             }},
         about:{ screen: AboutScreen, navigationOptions: {
                 title:'Acerca de',
