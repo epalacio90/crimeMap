@@ -20,7 +20,7 @@ const store = createStore(reducers, { },
     )
 );
 
-
+//Creating the main navigation
 const MainNavigator = createBottomTabNavigator({
 
         map: {
